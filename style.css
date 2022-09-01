@@ -1,0 +1,94 @@
+/* Специфікації */
+
+@font-face {
+    font-family: fraunces-black;
+    src: url(./fonts/fraunces-9pt-soft-black.ttf);
+}
+
+@font-face {
+    font-family: fraunces-bold;
+    src: url(./fonts/Fraunces_9pt\,Soft-Bold.ttf);
+}
+
+:root{
+    font-size: 18px;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+body,
+*,
+*::before,
+*::after,
+ul,
+li{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+.header{
+    padding: 2.6% 50px 0px 50px;
+    background: url('./images/desktop/image-header.jpg') no-repeat center top ;
+    background-size: cover;
+    width: 100vw;
+    height: 112vh;
+    color: white;
+}
+
+.logo-nav-btn__wrapper,
+.nav-btn__wrapper,
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn__wrapper,
+.nav__list{
+    gap: 47px;
+}
+
+.logo-nav-btn__wrapper{
+    justify-content: space-between;
+}
+
+.header__contact-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #24303E;
+    font-family: fraunces-bold, sans-serif;
+    font-size: 15px;
+    background-color: #fff;
+    line-height: 167%;
+    padding: 15px 31px;
+    border-radius: 28px;
+    letter-spacing: -0.107143px;
+    transition: 0.5s ease;
+}
+
+.header__contact-btn:hover{
+    background-color: rgba(255, 255, 255, 0.250);
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.item__link{
+    transition: 0.5s ease;
+}
+
+.item__link:hover{
+    border-bottom: 1px solid #fff;
+    transition: 0.5s ease;
+}
